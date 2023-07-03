@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        "use strict";//enables javascript strict mode
+
+       //let a = 34;//strongly typed
+       //var a = 34;//weakly typed
+       const b =34;//cant be changed
+        let a = 'This is String';
+        console.log(a);
+
+        // Numbers
+        // Objects
+        // Booleans
+        // String
+        // undefined
+        // null
+
+        function hello(){
+            console.log("Hey Vinaykumar ..Rudra mode begins");
+        }
+
+        let obja={
+            r:34,
+            m:64,
+
+            func:function myfunc(number){
+                console.log("The number is " + number);
+            }
+        }
+
+        document.addEventListener("click",function click(){
+            console.log("click");
+            //alert("hello");
+            let conf = confirm("Are you sure?");
+            console.log(conf);
+        })
+
+        // let arr = [1,2,3,4];
+        // for(let index=0;index<arr.length;index++){
+        //     const ele = arr[index];
+        //     console.log(ele);
+        // }
+
+        // arr.forEach(ele => {
+        //     console.log(ele);
+
+        // });
+        
+        console.log(this);//return window object
+       
+        // function myfunc(number){
+        //         console.log("The number is " + this);//undefined
+        //     }
+     
+        //This syntax helps use this globally(window object)
+        let myfunc=(number) => {
+                console.log("The number is " + this);//global window object
+            }
+            myfunc();
+     
+            //callback concept
+      setTimeout(()=>{
+        console.log("yayy");
+      },3000);
+      console.log("mai neeche wali script hu");
+
+    </script>
+</head>
+
+<body>
+    <h1>I am learning JS</h1>I 
+</html>
